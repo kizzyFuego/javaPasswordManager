@@ -1,4 +1,4 @@
-package dkit.kingbar;
+package kingbar;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;

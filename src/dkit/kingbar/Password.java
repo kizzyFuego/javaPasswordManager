@@ -1,4 +1,4 @@
-package dkit.kingbar;
+package kingbar;
 
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
@@ -7,6 +7,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Base64;
+import java.util.regex.Pattern;
 
 public class Password {
 
@@ -23,6 +24,8 @@ public class Password {
   // Exception messages
   public static final String ERROR_BAD_ALGORITHM  = "[Hash error] bad algorithm";
   public static final String ERROR_BAD_SPEC       = "[Hash error] bad key specification";
+  public static final String ERROR_WEAK_SALT       = "[Hash error] Weak Salt";
+  public static final String ERROR_WEAK_PASSWORD       = "[Requirement error] Weak Password";
 
   // #######################################################
   // # Instance variables
@@ -106,7 +109,17 @@ public class Password {
    * @param password A plaintext password.
    */
   public void setPassword(String password) {
-    this.password = password;
+      
+      String error = Validate.userApplicationPassword(password);
+       
+      if( error.length() != 0 )
+      {
+          throw new PasswordException(error);
+      }
+      else
+      {
+          this.password = password;
+      }
   }
 
   /**
@@ -122,7 +135,15 @@ public class Password {
    * @param salt A password salt value (as a string)
    */
   public void setSalt(String salt) {
-    this.salt = salt;
+    
+    if(salt.length() < 40)
+    {
+        throw new PasswordException(ERROR_WEAK_SALT);
+    }
+    else
+    {
+        this.salt = salt;
+    }
   }
 
   // #######################################################

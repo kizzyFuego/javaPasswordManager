@@ -1,4 +1,4 @@
-package dkit.kingbar;
+package kingbar;
 
 public class PasswordException extends RuntimeException {
 

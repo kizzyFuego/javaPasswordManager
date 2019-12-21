@@ -1,13 +1,13 @@
-package dkit.kingbar;
+package kingbar;
 
 /**
  *
  * @author Kingbar
  */
-public class Main { 
+public class Main {
     
-    public static void main(String[] args){
-        MainApp app = new MainApp();
-    }
-    
+    public static void main(String[] args)
+    {
+        PasswordManager passwordManager = new PasswordManager();
+    }      
 }
