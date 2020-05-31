@@ -17,6 +17,8 @@ You need a JAVA IDE for compiling, building or running the application.
 
 When running the program directly through an IDE, run the Main.java file which is the starting point of the application.
 
+Or it can be run directly from the Windows or Mac terminal when the build file is already available.
+
 
 ## Authors
 
@@ -31,4 +33,4 @@ We use [github](https://github.com/) for version control. For the versions avail
 ## Acknowledgments
 
 * Shane Gavin (DKIT)
-* **Finbar (DKIT)
+* Finbar (DKIT)
