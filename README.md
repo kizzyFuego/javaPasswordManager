@@ -31,6 +31,11 @@ Or it can be run directly from the Windows or Mac terminal when the build file i
 We use [github](https://github.com/) for version control. For the versions available, see the [click here](https://github.com/kizzyFuego/javaPasswordManager/). 
 
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
 ## Acknowledgments
 
 * Shane Gavin (DKIT)
