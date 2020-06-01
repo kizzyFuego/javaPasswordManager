@@ -23,6 +23,7 @@ Or it can be run directly from the Windows or Mac terminal when the build file i
 ## Authors
 
 * **Kingsley Ose (kizzyfuego)**
+* **Finbar (finthorn)**
 
 
 ## Versioning
@@ -33,4 +34,3 @@ We use [github](https://github.com/) for version control. For the versions avail
 ## Acknowledgments
 
 * Shane Gavin (DKIT)
-* Finbar (DKIT)
