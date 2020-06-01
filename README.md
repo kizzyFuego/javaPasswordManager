@@ -33,7 +33,7 @@ We use [github](https://github.com/) for version control. For the versions avail
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kizzyFuego/javaPasswordManager/LICENSE) file for details
 
 
 ## Acknowledgments
